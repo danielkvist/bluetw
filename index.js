@@ -26,7 +26,12 @@ const welcomeMsg = () => {
 };
 
 const successfulTweet = (id) => {
-	console.log(chalk.green(`tweet ${id} successfully published!`));
+	console.log(chalk.green(`✔ tweet ${id} successfully published!`));
+	console.log(' ');
+};
+
+const errReporter = (msg) => {
+	console.log(chalk.red(`❌ error: ${msg}`));
 	console.log(' ');
 };
 
@@ -71,10 +76,14 @@ const init = async () => {
 	});
 
 	const { tweet } = await inquirer.askTweet();
+	if (tweet.length > 280) {
+		errReporter('tweet is too long!');
+		return;
+	}
 
 	client.post('statuses/update', { status: tweet }, (err, data, _response) => {
 		if (err) {
-			console.log(err);
+			errReporter(err.message);
 			return;
 		}
 
