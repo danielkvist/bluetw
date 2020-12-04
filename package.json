@@ -1,11 +1,11 @@
 {
 	"name": "bluetw",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "An easy and simple way to tweet without leaving the terminal.",
-	"main": "./bin/index.js",
-	"bin": "./bin/index.js",
+	"main": "./cli.js",
+	"bin": "./cli.js",
 	"scripts": {
-		"start": "node ./bin/index.js",
+		"start": "node ./cli.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
