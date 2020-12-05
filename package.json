@@ -1,6 +1,6 @@
 {
 	"name": "bluetw",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "An easy and simple way to tweet without leaving the terminal.",
 	"main": "./cli.js",
 	"bin": "./cli.js",
