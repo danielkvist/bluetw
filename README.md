@@ -5,7 +5,7 @@
 
 **Tweet without leaving the terminal.**
 
-An easy and simple CLI that allows you to tweet from your terminal.
+An easy and simple CLI that allows you to tweet from your terminal and anything else.
 
 ## Install
 
@@ -39,39 +39,19 @@ The CLI that allows you to tweet without leaving the terminal!
 
 ## Motivation
 
-I've always wanted to post more on Twitter. But at the same time I also wanted to stay away from its feed to maintain some focus in whatever I'm working on. What is a shame, because it is when I am coding, designing or studying that more ideas come to mind.
+I've always wanted to post more on Twitter. But at the same time I also wanted to stay away from its feed to maintain some focus in whatever I'm working on. What is a shame, because it is when I am coding, designing or studying that more ideas come to my mind.
 
-So I decided to create this very small tool with very limited functionality to quickly publish tweets from the my terminal.
+So I decided to create this very small tool with very limited functionality to quickly publish tweets from the my terminal and anything else.
 
 ## Usage
 
-If you want to be promted simple use the `bluetw` command without any flags.
-
-```bash
-bluetw
-```
-
-This will let you write your tweet and add one image if you want to.
-
-```text
- /\/|  _       _                  _                /\/|
-|/\/  | |__   | |  _   _    ___  | |_  __      __ |/\/
-      | '_ \  | | | | | |  / _ \ | __| \ \ /\ / /
-      | |_) | | | | |_| | |  __/ | |_   \ V  V /
-      |_.__/  |_|  \__,_|  \___|  \__|   \_/\_/
-
-The CLI that allows you to tweet without leaving the terminal!
-
-? 🐦 What's happening?
-```
-
-If what you want is to tweet directly, simply use the `-m` or `--message` flag.
+To publish a tweet with a only a text message, use the `-m` flag.
 
 ```bash
 bluetw -m "Hello, world"
 ```
 
-To write a tweet with an image simply add the `-i` or `--image` flag. You can't post images in Twitter without and alt text so you will need to write one.
+To write a tweet with an image added use the `-i` flag. You can't post images in Twitter without and alt text so you need to write one.
 
 ```bash
 bluetw -m "Hello, world!" -i meme.png "A funny meme"

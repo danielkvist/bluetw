@@ -1,7 +1,7 @@
 {
 	"name": "bluetw",
-	"version": "1.1.1",
-	"description": "An easy and simple way to tweet without leaving the terminal.",
+	"version": "1.2.0",
+	"description": "An easy and simple CLI that allows you to tweet from your terminal and anything else.",
 	"main": "./cli.js",
 	"bin": "./cli.js",
 	"scripts": {
@@ -9,6 +9,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
+		"tweet",
 		"twitter",
 		"cli"
 	],
