@@ -1,6 +1,6 @@
 {
 	"name": "bluetw",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"description": "An easy and simple CLI that allows you to tweet from your terminal and anything else.",
 	"main": "./cli.js",
 	"bin": "./cli.js",
